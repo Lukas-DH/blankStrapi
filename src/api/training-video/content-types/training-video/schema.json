@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "training_videos",
+  "info": {
+    "singularName": "training-video",
+    "pluralName": "training-videos",
+    "displayName": "training video"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "order": {
+      "type": "decimal"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::speciality.speciality",
+      "inversedBy": "training_videos"
+    },
+    "course": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course.course",
+      "inversedBy": "training_videos"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "specialities",
+  "info": {
+    "singularName": "speciality",
+    "pluralName": "specialities",
+    "displayName": "Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fieldRep": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "training_videos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::training-video.training-video",
+      "mappedBy": "category"
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course",
+      "mappedBy": "category"
+    }
+  }
+}
