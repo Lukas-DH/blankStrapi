@@ -4,7 +4,8 @@
   "info": {
     "singularName": "course",
     "pluralName": "courses",
-    "displayName": "course"
+    "displayName": "course",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,7 +18,7 @@
       "unique": true
     },
     "description": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "training_videos": {
@@ -26,7 +27,7 @@
       "target": "api::training-video.training-video",
       "mappedBy": "course"
     },
-    "category": {
+    "specialty": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::speciality.speciality",

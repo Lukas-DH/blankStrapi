@@ -4,7 +4,8 @@
   "info": {
     "singularName": "training-video",
     "pluralName": "training-videos",
-    "displayName": "training video"
+    "displayName": "training video",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,19 +17,13 @@
       "required": true
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "url": {
       "type": "string"
     },
     "order": {
       "type": "decimal"
-    },
-    "category": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::speciality.speciality",
-      "inversedBy": "training_videos"
     },
     "course": {
       "type": "relation",

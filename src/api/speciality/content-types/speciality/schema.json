@@ -22,19 +22,13 @@
       "required": true
     },
     "description": {
-      "type": "string"
-    },
-    "training_videos": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::training-video.training-video",
-      "mappedBy": "category"
+      "type": "text"
     },
     "courses": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::course.course",
-      "mappedBy": "category"
+      "mappedBy": "specialty"
     }
   }
 }
