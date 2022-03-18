@@ -22,7 +22,8 @@
       "required": true
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "courses": {
       "type": "relation",

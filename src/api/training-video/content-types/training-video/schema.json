@@ -17,13 +17,16 @@
       "required": true
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "order": {
-      "type": "decimal"
+      "type": "decimal",
+      "required": true
     },
     "course": {
       "type": "relation",
