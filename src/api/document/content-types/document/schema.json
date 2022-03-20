@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "documents",
+  "info": {
+    "singularName": "document",
+    "pluralName": "documents",
+    "displayName": "Service Documents",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "documentType": {
+      "type": "enumeration",
+      "enum": [
+        "Service Process",
+        "Technical Service Bulletin (TSB) ",
+        "Forms"
+      ]
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "General",
+        "FAQ",
+        "Geri",
+        "Gavi",
+        "Gidget",
+        "Gems"
+      ]
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

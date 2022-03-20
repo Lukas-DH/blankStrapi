@@ -17,10 +17,6 @@
       "required": true,
       "unique": true
     },
-    "description": {
-      "type": "text",
-      "required": true
-    },
     "training_videos": {
       "type": "relation",
       "relation": "oneToMany",
