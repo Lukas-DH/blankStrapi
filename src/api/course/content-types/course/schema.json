@@ -28,6 +28,10 @@
       "relation": "manyToOne",
       "target": "api::speciality.speciality",
       "inversedBy": "courses"
+    },
+    "description": {
+      "type": "text",
+      "required": true
     }
   }
 }
